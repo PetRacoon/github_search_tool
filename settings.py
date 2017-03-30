@@ -1,5 +1,11 @@
-REQUEST_MAX_RETRIES = 3
+REQUEST_MAX_RETRIES = 60
 REQUEST_TIMEOUT = 5
-REQUEST_COOLDOWN = 1
+REQUEST_COOLDOWN = 7
 
-BASE_SEARCH_URL = 'https://api.github.com/search/repositories'
+# urls
+SEARCH_REPOSITORIES_URL = 'https://api.github.com/search/repositories'
+SEARCH_COMMITS_URL = 'https://api.github.com/search/commits'
+
+REQEST_DEFAULT_HEADERS = {
+    "Accept": "application/vnd.github.cloak-preview",
+}
